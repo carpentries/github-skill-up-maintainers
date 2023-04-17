@@ -1,5 +1,5 @@
 ---
-title: "Using Markdown"
+title: "Reviewing pull-requests"
 teaching: 10
 exercises: 2
 ---
