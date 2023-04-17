@@ -8,7 +8,6 @@ This lesson will cover the following skills:
   - Update branch based on changes made on main/upstream repo
 - Reviewing pull-requests
 - Referencing pull-requests/issues 
-- Creating development branches and linking issues
 
 For any questions contact team@carpentries.org
 
