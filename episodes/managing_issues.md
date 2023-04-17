@@ -1,5 +1,5 @@
 ---
-title: "Using Markdown"
+title: "Managing issues"
 teaching: 10
 exercises: 2
 ---
