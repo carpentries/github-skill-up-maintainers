@@ -1,10 +1,14 @@
-# The Carpentries Workbench Template Markdown Lesson
+# A skill-up for new lesson Maintainers
 
-This lesson is a template lesson that uses [The Carpentries Workbench][workbench].
+This lesson will cover the following skills: 
 
-To get started using this template, make sure you're logged into Github and visit https://github.com/carpentries/workbench-template-md/generate
-and follow the instructions.
+- Managing issues (labelling etc.)
+- Resolving conflicts
+  - Update pull-request once merging directly is no longer possible
+  - Update branch based on changes made on main/upstream repo
+- Reviewing pull-requests
+- Referencing pull-requests/issues 
+- Creating development branches and linking issues
 
-If you have any questions, contact [@zkamvar](https://github.com/zkamvar)
+For any questions contact team@carpentries.org
 
-[workbench]: https://carpentries.github.io/sandpaper-docs/
