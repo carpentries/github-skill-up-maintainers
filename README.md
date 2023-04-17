@@ -1,4 +1,4 @@
-# A skill-up for new lesson Maintainers
+# A skill-up for new lesson maintainers
 
 This lesson will cover the following skills: 
 
