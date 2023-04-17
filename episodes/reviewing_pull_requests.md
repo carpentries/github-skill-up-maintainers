@@ -1,18 +1,17 @@
 ---
 title: "Reviewing pull-requests"
-teaching: 10
-exercises: 2
+teaching: 0
+exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How do you write a lesson using Markdown and `{sandpaper}`?
+“- TODO”
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with The Carpentries Workbench
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+“- TODO”
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
