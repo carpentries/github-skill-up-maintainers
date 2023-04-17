@@ -2,8 +2,7 @@
 site: sandpaper::sandpaper_site
 ---
 
-This is a new lesson built with [The Carpentries Workbench][workbench]. 
+A skill-up for new lesson Maintainers
 
-
-[workbench]: https://carpentries.github.io/sandpaper-docs
+This GitHub skill-up was developed for Carpentries maintainers and lesson developers. 
 
