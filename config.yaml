@@ -43,12 +43,8 @@ contact: 'team@carpentries.org'
 #
 # Example -------------
 #
-episodes:
-- introduction.md
-- managing_issues.md
-- resolving_conflicts.md
-- reviewing_pull_requests.md
-- referencing_pull_requests_issues.md
+#episodes:
+#- introduction.md
 
 #
 # learners:
@@ -64,6 +60,10 @@ episodes:
 # Order of episodes in your lesson
 episodes: 
 - introduction.md
+- managing_issues.md
+- resolving_conflicts.md
+- reviewing_pull_requests.md
+- referencing_pull_requests_issues.md
 
 # Information for Learners
 learners: 
