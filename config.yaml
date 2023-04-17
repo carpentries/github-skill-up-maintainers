@@ -59,7 +59,6 @@ contact: 'team@carpentries.org'
 
 # Order of episodes in your lesson
 episodes: 
-- introduction.md
 - managing_issues.md
 - resolving_conflicts.md
 - reviewing_pull_requests.md
