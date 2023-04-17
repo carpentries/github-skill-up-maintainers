@@ -1,5 +1,5 @@
 ---
-title: "Using Markdown"
+title: "Resolving conflicts"
 teaching: 10
 exercises: 2
 ---
