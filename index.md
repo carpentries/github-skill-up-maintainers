@@ -2,7 +2,22 @@
 site: sandpaper::sandpaper_site
 ---
 
-A skill-up for new lesson Maintainers
+This is a GitHub skill-up for Carpentries Maintainers and lesson developers.
+It is designed primarily as a resource for skill-up leaders,
+but may also be useful for self-directed learning.
 
-This GitHub skill-up was developed for Carpentries maintainers and lesson developers. 
+We recommend that skill-up leaders use [the Instructor View] when using the site.
 
+## Target Audience
+
+The skill-up is aimed at people with a basic familiarity with the GitHub interface,
+and the process of editing files and 
+committing changes to a repository via the GitHub web interface.
+
+## Objectives
+
+After following the skill-up, participants should be ready to practice the following skills:
+
+- Manage issues more effectively with labels, referencing, and automatic closure
+- Use GitHub's comment and suggestion features to review pull requests
+- Resolve simple merge conflicts using the GitHub web interface
