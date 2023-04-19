@@ -368,7 +368,7 @@ those, and labels can be added/updated as you triage the issue list.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Use your example repository to demonstrate how to label issues, and
 to discuss the appropriate use of some important labels here.</p>
@@ -483,7 +483,7 @@ any links that you are not going to use.
 </div>
 </div></section><section id="aio-reviewing_pull_requests"><p>Content from <a href="reviewing_pull_requests.html">Reviewing pull-requests</a></p>
 <hr>
-<p> Last updated on 2023-04-17 | 
+<p> Last updated on 2023-04-19 | 
         
         <a href="https://carpentries.github.io/github-skill-up-maintainers/edit/main/episodes/reviewing_pull_requests.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 0 minutes </p>
@@ -497,7 +497,12 @@ any links that you are not going to use.
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<p>“- TODO”</p>
+<ul>
+<li>What features does GitHub provide to facilitate reviewing pull
+requests?</li>
+<li>What are the different options for the outcome of a pull request
+review, and when should I use each one?</li>
+</ul>
 </div>
 </div>
 </div>
@@ -505,14 +510,118 @@ any links that you are not going to use.
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<p>“- TODO”</p>
+<ul>
+<li>create comments on particular lines and ranges of lines in the
+changes proposed by a pull request</li>
+<li>suggest specific changes to a pull request</li>
+<li>select the “approve”, “comment”, or “request changes” outcomes of a
+pull request review</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
-</div></section><section id="aio-referencing_pull_requests_issues"><p>Content from <a href="referencing_pull_requests_issues.html">Referencing pull-requests and issues</a></p>
+</div>
+<ul>
+<li>reviewing PRs is one of the most important tasks for a
+Maintainer</li>
+<li>the way you review a pull request, and communicate with the person
+who opened it, can have an enormous impact on their motivation to
+contribute again</li>
+<li>GitHub provides several features that can improve your experience as
+a reviewer, and make it easier for contributors to follow up on your
+review</li>
+</ul>
+<section id="line-by-line-comments"><h2 class="section-heading">Line-by-Line Comments<a class="anchor" aria-label="anchor" href="#line-by-line-comments"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>see the changes proposed in a PR via the <em>Files Changed</em>
+tab</li>
+<li>if you want to comment on a particular line, hover your mouse over
+it and click the <code>+</code> symbol</li>
+<li>comments can be added on their own, or as part of a <em>Review</em>:
+a commentary on the pull request as a whole</li>
+<li>to comment on a range of lines, click-and-hold on the <code>+</code>
+for the first line in the range, and drag your cursor down the range,
+then release</li>
+</ul></section><section id="suggesting-changes"><h2 class="section-heading">Suggesting Changes<a class="anchor" aria-label="anchor" href="#suggesting-changes"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>as well as adding comments line-by-line, you can also suggest
+specific changes, e.g. to fix a typo, suggest improved wording,
+etc.</li>
+<li>take the same approach to start a comment on a line or range of
+lines, then click the “add a suggestion” button, and edit the source
+content that appears in the input box</li>
+<li>this makes it much easier for contributors to a) understand
+reviewers’ suggestions, and b) implement them</li>
+</ul></section><section id="finishing-a-review"><h2 class="section-heading">Finishing a Review<a class="anchor" aria-label="anchor" href="#finishing-a-review"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>when you have finished commenting on particular lines, and
+suggesting changes, you can finish your review by clicking the “Review
+changes” or “Finish your review” button near the top-right of the
+screen</li>
+<li>add general comments, a summary of your review, etc - don’t forget
+to thank them for taking the time to contribute! - and choose one of the
+three options:
+<ul>
+<li>“Comment” - a general comment, with no firm outcome. Can be used to
+complete a review before a pull request is closed.</li>
+<li>“Approve” - approve the PR for merging. Some people use this when
+suggesting only very minor or optional changes - if you want to do this,
+make sure you are explicit about what changes you are suggesting etc
+before the PR can be merged</li>
+<li>“Request changes” - indicates that changes would be required to the
+PR before you would be willing to merge it.</li>
+</ul>
+</li>
+</ul>
+<div id="callout1" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="saved-replies" class="callout-inner">
+<h3 class="callout-title">Saved Replies<a class="anchor" aria-label="anchor" href="#callout1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>You can add “saved replies” to your GitHub account</li>
+<li>These can be used to automatically input a template response, on
+issues, PRs, etc</li>
+<li>Use these if you find that you are often saying the same or similar
+things to people</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>What features does GitHub provide to facilitate reviewing pull
+requests?</li>
+<li>What are the different options for the outcome of a pull request
+review, and when should I use each one?</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</section></section><section id="aio-referencing_pull_requests_issues"><p>Content from <a href="referencing_pull_requests_issues.html">Referencing pull-requests and issues</a></p>
 <hr>
-<p> Last updated on 2023-04-17 | 
+<p> Last updated on 2023-04-19 | 
         
         <a href="https://carpentries.github.io/github-skill-up-maintainers/edit/main/episodes/referencing_pull_requests_issues.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 0 minutes </p>
@@ -526,7 +635,11 @@ any links that you are not going to use.
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<p>“- TODO”</p>
+<ul>
+<li>How do I reference issues and pull requests?</li>
+<li>How can issues be automatically closed when a pull request is
+merged?</li>
+</ul>
 </div>
 </div>
 </div>
@@ -534,9 +647,47 @@ any links that you are not going to use.
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<p>“- TODO”</p>
+<ul>
+<li>reference issues and pull requests by their number</li>
+<li>implement keywords to trigger automatic closue of issues when fixed
+by a pull request</li>
+</ul>
 </div>
 </div>
+</div>
+</div>
+</div>
+<ul>
+<li>It can be helpful to refer to issues and pull requests in
+conversations elsewhere in a repository</li>
+<li>Every issue and PR has a unique number (based on the order in which
+they were created)</li>
+<li>These numbers can be used, preceded by <code>#</code>, to reference
+a given issue or PR.</li>
+<li>Additionally, PRs (and commit messages) that include particular
+phrases will trigger the automatic closure of an issue:
+<ul>
+<li>“closes”</li>
+<li>“fixes”</li>
+<li>“resolves”</li>
+</ul>
+</li>
+</ul>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>Issues and pull requests can be referred to by their number within a
+repository.</li>
+<li>Pull requests descriptions that include “fixes #XYZ”, “resolves
+#XYZ”, or “closes #XYZ” will all close issue number XYZ when they are
+merged.</li>
+</ul>
 </div>
 </div>
 </div></section>
