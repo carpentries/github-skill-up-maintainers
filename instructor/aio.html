@@ -277,7 +277,7 @@
         
 <section id="aio-managing_issues"><p>Content from <a href="managing_issues.html">Managing issues</a></p>
 <hr>
-<p> Last updated on 2023-04-17 | 
+<p> Last updated on 2023-04-19 | 
         
         <a href="https://carpentries.github.io/github-skill-up-maintainers/edit/main/episodes/managing_issues.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 0 minutes </p>
@@ -291,7 +291,11 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<p>“- TODO”</p>
+<ul>
+<li>How can labelling help me manage issues on a repository?</li>
+<li>How do I add labels to issues?</li>
+<li>What are the recommended labels, and when should I use them?</li>
+</ul>
 </div>
 </div>
 </div>
@@ -299,12 +303,156 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<p>“- TODO”</p>
+<ul>
+<li>explain the value of labelling issues</li>
+<li>apply labels to issues</li>
+<li>explore the set of labels recommended by The Carpentries</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
-</div></section><section id="aio-resolving_conflicts"><p>Content from <a href="resolving_conflicts.html">Resolving conflicts</a></p>
+</div>
+<section id="issue-triage"><h2 class="section-heading">Issue Triage<a class="anchor" aria-label="anchor" href="#issue-triage"></a>
+</h2>
+<hr class="half-width">
+<p>Maintainers typically do not have time to respond immediately to
+every new issue and comment that is added to their repository. In a more
+common scenario, a Maintainer visits their repository and finds several
+new issues and pull requests, plus some new comments and changes to
+those that were open at the end of their previous visit.</p>
+<p>A good first step to take in these circumstances is <em>issue
+triage</em>: time spent processing the open issues and figuring out what
+should be prioritised, what can be closed, what needs to be brought to
+the attention of others in the community (co-Maintainers, Curriculum
+Advisors, would-be contributors, Core Team, etc), and so on.</p>
+<div id="callout1" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="the-value-of-teamwork" class="callout-inner">
+<h3 class="callout-title">The Value of Teamwork<a class="anchor" aria-label="anchor" href="#callout1"></a>
+</h3>
+<div class="callout-content">
+<p>Note that this triage process is usually made much easier, more
+efficient, and more fun when co-Maintainers of a lesson can meet
+synchronously to work through issues and pull requests together.</p>
+<p>Community members have reported positive experience with short,
+regularly scheduled e.g. monthly coworking sessions with their
+Maintainer team, using screen-sharing and focussed discussion to
+distribute tasks and collaboratively determine how to process and
+respond to contributions on their repositories.</p>
+<p>It can also be a good opportunity for Maintainers to get know each
+other better, and to share their skills and experience with Git, GitHub,
+and the lesson infrastructure.</p>
+</div>
+</div>
+</div>
+</section><section id="labelling-issues"><h2 class="section-heading">Labelling Issues<a class="anchor" aria-label="anchor" href="#labelling-issues"></a>
+</h2>
+<hr class="half-width">
+<p>The triage process can be improved with effective use of
+<em>labels</em> applied to issues. Issues are tags that can be applied
+to issues (and pull requests), annotating them according to their
+status, type, complexity, etc. When labels are applied to an issue, they
+appear next to it in the issue listing for the repository. Clicking on a
+label will show you a list of all issues with that label.</p>
+<p>When returning to a lesson repository after some time away, labels
+applied to old issues can help to remind you of the context for each of
+those, and labels can be added/updated as you triage the issue list.</p>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Note
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>Use your example repository to demonstrate how to label issues, and
+to discuss the appropriate use of some important labels here.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section id="inviting-community-contributions"><h2 class="section-heading">Inviting Community Contributions<a class="anchor" aria-label="anchor" href="#inviting-community-contributions"></a>
+</h2>
+<hr class="half-width">
+<p>Lesson repositories are open source and publicly-visible, and you can
+expect some spontaneous contributions from the wider community. However,
+in some circumstances, you may want to bring particular items to the
+attention of community members.</p>
+<div class="section level3">
+<h3 id="refer-to-cac">Refer to CAC<a class="anchor" aria-label="anchor" href="#refer-to-cac"></a>
+</h3>
+<p>When you want or need to <a href="https://carpentries.github.io/maintainer-onboarding/04-communicate-advisors.html" class="external-link">refer
+an issue/contribution to the Curriculum Advisory Committee</a> for your
+lesson, you should add the <code>status:refer to cac</code> label, and
+tag the CAC in the relevant issue/pull request discussion thread
+(e.g. <code>@datacarpentry/curriculum-advisors-image</code>).</p>
+<p>Adding this label will help members of the CAC more easily identify
+and browse through the items they need to discuss, increasing the
+likelihood that you will receive a timely response.</p>
+</div>
+<div class="section level3">
+<h3 id="help-wanted-good-first-issue">Help Wanted &amp; Good First Issue<a class="anchor" aria-label="anchor" href="#help-wanted-good-first-issue"></a>
+</h3>
+<p>The <code>help wanted</code> and <code>good first issue</code> labels
+can be useful to draw attention from new contributors. In particular,
+the <code>help wanted</code> label can be used to flag up issues that
+the Maintainers would particularly appreciate external support on.
+Issues with this label in any of The Carpentries official lesson
+repositories will appear in the listing on <a href="https://carpentries.org/help-wanted-issues/" class="external-link">the <em>Help Wanted
+Issues</em> page of the website</a>, where new community members are
+often directed to find opportunities to contribute to a lesson
+repository.</p>
+<p>The <code>good first issue</code> label is used to identify issues
+that do not require in-depth knowledge of the project and its
+infrastructure, etc. Newcomers to the project can use this label to find
+opportunities to make their first contribution. GitHub provides a view
+of all of a repository’s issues with the <code>good first issue</code>
+label on the <code>/contribute</code> page for that repository, e.g. <a href="https://github.com/github/docs/contribute" class="external-link uri">https://github.com/github/docs/contribute</a></p>
+<div id="callout2" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="batch-labelling" class="callout-inner">
+<h3 class="callout-title">Batch Labelling<a class="anchor" aria-label="anchor" href="#callout2"></a>
+</h3>
+<div class="callout-content">
+<p>Labels can be applied to issues in batches from the issue listing
+page. Check the box next to each issue you want to apply a given label
+to, then click the “Label” dropdown in the top bar of the listing, and
+choose the label(s) you want to apply to these issues.</p>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>Labelling issues can help you prioritise issues and bring them to
+the community’s attention.</li>
+<li>Labels can be added to an issue using the right sidebar menu of the
+GitHub web interface.</li>
+<li>The Carpentries provides a recommend set of labels, and has systems
+and processes that work with some of these.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</div>
+</section></section><section id="aio-resolving_conflicts"><p>Content from <a href="resolving_conflicts.html">Resolving conflicts</a></p>
 <hr>
 <p> Last updated on 2023-04-17 | 
         
@@ -439,9 +587,9 @@
   "creativeWorkStatus": "active",
   "url": "https://github-skill-up-maintainers.github.io/NA/instructor/aio.html",
   "identifier": "https://github-skill-up-maintainers.github.io/NA/instructor/aio.html",
-  "dateCreated": "2023-04-17",
-  "dateModified": "2023-04-18",
-  "datePublished": "2023-04-18"
+  "dateCreated": "2023-04-19",
+  "dateModified": "2023-04-19",
+  "datePublished": "2023-04-19"
 }
 
   </script><script>
