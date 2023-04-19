@@ -85,11 +85,11 @@
   Skill-up: GitHub for Maintainers and Lesson Developers
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: NaN%" class="percentage">
-    NaN%
+<aside class="col-md-12 lesson-progress"><div style="width: 35%" class="percentage">
+    35%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: NaN%" aria-valuenow="NaN" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 35%" aria-valuenow="35" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -153,12 +153,20 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         Resolving conflicts
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+        
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#what-is-a-merge-conflict">What is a merge conflict?</a></li>
+<li><a href="#resolving-a-merge-conflict">Resolving a Merge Conflict</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
         
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -232,13 +240,13 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Resolving conflicts</h1>
-        <p> Last updated on 2023-04-17 | 
+        <p> Last updated on 2023-04-19 | 
         
         <a href="https://carpentries.github.io/github-skill-up-maintainers/edit/main/episodes/resolving_conflicts.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
         
         
-        <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 0 minutes </p>
+        <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 15 minutes </p>
         
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -253,28 +261,113 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<p>“- TODO”</p>
-</div>
+<ul><li>When might I encounter merge conflicts while maintaining/developing
+a lesson?</li>
+<li>How can I resolve simple conflicts in the GitHub web interface?</li>
+</ul></div>
 </div>
 </div>
 <div class="col-md-8">
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<p>“- TODO”</p>
+<p>After following this section, participants will be ready to practice
+the following skills:</p>
+<ul><li>resolve merge conflicts using the GitHub web interface</li>
+</ul></div>
 </div>
 </div>
 </div>
+</div>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Note
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div class="accordion-body">
+<p>Use the example repository to show an example of a pull request that
+is blocked by a simple conflict, then demonstrate how you can resolve
+this using the web interface.</p>
+</div>
+</div>
+</div>
+</div>
+<section id="what-is-a-merge-conflict"><h2 class="section-heading">What is a merge conflict?<a class="anchor" aria-label="anchor" href="#what-is-a-merge-conflict"></a>
+</h2>
+<hr class="half-width"><p>A merge conflict occurs when Git is not able to automatically
+integrate (<em>merge</em>) the changes in a branch with the version of
+the relevant file(s) into another branch (usually the default or main
+branch) of the project.</p>
+<p>Conflicts are seen when the target branch (usually <code>main</code>)
+has changed since the branch for the pull request was created. Often,
+Git is able to combine the two sets of changes without any trouble. But
+sometimes it gets stuck, and requires a human to intervene and decide
+how multiple changes should be combined, which change should take
+precedence, etc.</p>
+<p>When these conflicts arise within a file, Git marks up the file
+contents to highlight them. The conflicts looks something like this:</p>
+<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; pr-branch
+this is one version of the line. it exists in the version of this file in the pr-branch branch.
+=======
+this is another version of the same line. it exists in the version of this file in the main branch.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; main</code></pre>
+</section><section id="resolving-a-merge-conflict"><h2 class="section-heading">Resolving a Merge Conflict<a class="anchor" aria-label="anchor" href="#resolving-a-merge-conflict"></a>
+</h2>
+<hr class="half-width"><p>Before the PR can be merged, someone (usually the contributor who
+opened the pull request, or one of the repository Maintainers) needs to
+resolve each of these conflicts by:</p>
+<ol style="list-style-type: decimal"><li>Figuring out which version (or combination of versions) of the lines
+should be kept in the file.</li>
+<li>Removing all other lines (including the <code>&lt;</code>,
+<code>=</code>, and <code>&gt;</code> symbols) to leave only that
+resolved version.</li>
+</ol><p>After that has been done, and no conflicts remain to be resolved, the
+branch can be updated, bringing it back in line with the changes in the
+target branch.</p>
+<p>GitHub provides an interface to help you do this, with buttons for
+quick navigation between multiple conflicts, highlighting of the
+conflicting parts of the file, etc.</p>
+<div id="callout1" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="larger-conflicts" class="callout-inner">
+<h3 class="callout-title">Larger Conflicts<a class="anchor" aria-label="anchor" href="#callout1"></a>
+</h3>
+<div class="callout-content">
+<p>Sometimes the conflicts between branches will be too large or too
+complex to be resolved within the GitHub web interface. In these cases,
+the conflicts will need to be resolved on the command line.</p>
+<p>GitHub provides <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line" class="external-link">a
+guide to resolving conflicts on the command line</a>, and other tools
+exist to help with merging and resolving conflicts.</p>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul><li>You may encounter merge conflicts in large pull requests and those
+that have been open for some time.</li>
+<li>GitHub provides an interface to resolve simple conflicts in the
+GitHub web interface.</li>
+</ul></div>
 </div>
 </div>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/managing_issues.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/reviewing_pull_requests.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -327,7 +420,7 @@ any links that you are not going to use.
   "url": "https://github-skill-up-maintainers.github.io/NA/instructor/resolving_conflicts.html",
   "identifier": "https://github-skill-up-maintainers.github.io/NA/instructor/resolving_conflicts.html",
   "dateCreated": "2023-04-19",
-  "dateModified": "2023-04-17",
+  "dateModified": "2023-04-19",
   "datePublished": "2023-04-19"
 }
 
