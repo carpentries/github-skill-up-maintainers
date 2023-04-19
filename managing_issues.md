@@ -1,6 +1,6 @@
 ---
 title: "Managing issues"
-teaching: 0
+teaching: 30
 exercises: 0
 ---
 
@@ -13,6 +13,8 @@ exercises: 0
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
+
+After following this section, participants will be ready to practice the following skills:
 
 - explain the value of labelling issues
 - apply labels to issues
