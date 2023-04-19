@@ -1,6 +1,6 @@
 ---
 title: "Reviewing pull-requests"
-teaching: 0
+teaching: 30
 exercises: 0
 ---
 
@@ -12,6 +12,8 @@ exercises: 0
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
+
+After following this section, participants will be ready to practice the following skills:
 
 - create comments on particular lines and ranges of lines in the changes proposed by a pull request
 - suggest specific changes to a pull request

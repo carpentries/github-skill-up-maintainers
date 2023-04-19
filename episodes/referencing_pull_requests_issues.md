@@ -1,6 +1,6 @@
 ---
 title: "Referencing pull-requests and issues"
-teaching: 0
+teaching: 10
 exercises: 0
 ---
 
@@ -12,6 +12,8 @@ exercises: 0
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
+
+After following this section, participants will be ready to practice the following skills:
 
 - reference issues and pull requests by their number
 - implement keywords to trigger automatic closue of issues when fixed by a pull request
