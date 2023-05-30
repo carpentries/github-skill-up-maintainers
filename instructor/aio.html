@@ -189,7 +189,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="resolving_conflicts.html">2. Resolving conflicts</a>
+        <a href="referencing_pull_requests_issues.html">2. Referencing pull-requests and issues</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -213,7 +213,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="referencing_pull_requests_issues.html">4. Referencing pull-requests and issues</a>
+        <a href="resolving_conflicts.html">4. Resolving conflicts</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -279,7 +279,7 @@
 <hr>
 <p> Last updated on 2023-04-19 | 
         
-        <a href="https://carpentries.github.io/github-skill-up-maintainers/edit/main/episodes/managing_issues.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/carpentries/github-skill-up-maintainers/edit/main/episodes/managing_issues.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 30 minutes </p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -454,12 +454,12 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
 </div>
-</section></section><section id="aio-resolving_conflicts"><p>Content from <a href="resolving_conflicts.html">Resolving conflicts</a></p>
+</section></section><section id="aio-referencing_pull_requests_issues"><p>Content from <a href="referencing_pull_requests_issues.html">Referencing pull-requests and issues</a></p>
 <hr>
 <p> Last updated on 2023-04-19 | 
         
-        <a href="https://carpentries.github.io/github-skill-up-maintainers/edit/main/episodes/resolving_conflicts.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 15 minutes </p>
+        <a href="https://github.com/carpentries/github-skill-up-maintainers/edit/main/episodes/referencing_pull_requests_issues.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 10 minutes </p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -471,9 +471,9 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>When might I encounter merge conflicts while maintaining/developing
-a lesson?</li>
-<li>How can I resolve simple conflicts in the GitHub web interface?</li>
+<li>How do I reference issues and pull requests?</li>
+<li>How can issues be automatically closed when a pull request is
+merged?</li>
 </ul>
 </div>
 </div>
@@ -485,86 +485,31 @@ a lesson?</li>
 <p>After following this section, participants will be ready to practice
 the following skills:</p>
 <ul>
-<li>resolve merge conflicts using the GitHub web interface</li>
+<li>reference issues and pull requests by their number</li>
+<li>implement keywords to trigger automatic closue of issues when fixed
+by a pull request</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">
-  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
-  Instructor Note
-  </h3>
-</button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
-<div class="accordion-body">
-<p>Use the example repository to show an example of a pull request that
-is blocked by a simple conflict, then demonstrate how you can resolve
-this using the web interface.</p>
-</div>
-</div>
-</div>
-</div>
-<section id="what-is-a-merge-conflict"><h2 class="section-heading">What is a merge conflict?<a class="anchor" aria-label="anchor" href="#what-is-a-merge-conflict"></a>
-</h2>
-<hr class="half-width">
-<p>A merge conflict occurs when Git is not able to automatically
-integrate (<em>merge</em>) the changes in a branch with the version of
-the relevant file(s) into another branch (usually the default or main
-branch) of the project.</p>
-<p>Conflicts are seen when the target branch (usually <code>main</code>)
-has changed since the branch for the pull request was created. Often,
-Git is able to combine the two sets of changes without any trouble. But
-sometimes it gets stuck, and requires a human to intervene and decide
-how multiple changes should be combined, which change should take
-precedence, etc.</p>
-<p>When these conflicts arise within a file, Git marks up the file
-contents to highlight them. The conflicts looks something like this:</p>
-<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; pr-branch
-this is one version of the line. it exists in the version of this file in the pr-branch branch.
-=======
-this is another version of the same line. it exists in the version of this file in the main branch.
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; main</code></pre>
-</section><section id="resolving-a-merge-conflict"><h2 class="section-heading">Resolving a Merge Conflict<a class="anchor" aria-label="anchor" href="#resolving-a-merge-conflict"></a>
-</h2>
-<hr class="half-width">
-<p>Before the PR can be merged, someone (usually the contributor who
-opened the pull request, or one of the repository Maintainers) needs to
-resolve each of these conflicts by:</p>
-<ol style="list-style-type: decimal">
-<li>Figuring out which version (or combination of versions) of the lines
-should be kept in the file.</li>
-<li>Removing all other lines (including the <code>&lt;</code>,
-<code>=</code>, and <code>&gt;</code> symbols) to leave only that
-resolved version.</li>
-</ol>
-<p>After that has been done, and no conflicts remain to be resolved, the
-branch can be updated, bringing it back in line with the changes in the
-target branch.</p>
-<p>GitHub provides an interface to help you do this, with buttons for
-quick navigation between multiple conflicts, highlighting of the
-conflicting parts of the file, etc.</p>
-<div id="larger-conflicts" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="larger-conflicts" class="callout-inner">
-<h3 class="callout-title">Larger Conflicts<a class="anchor" aria-label="anchor" href="#larger-conflicts"></a>
-</h3>
-<div class="callout-content">
-<p>Sometimes the conflicts between branches will be too large or too
-complex to be resolved within the GitHub web interface. In these cases,
-the conflicts will need to be resolved on the command line.</p>
-<p>GitHub provides <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line" class="external-link">a
-guide to resolving conflicts on the command line</a>, and other tools
-exist to help with merging and resolving conflicts.</p>
-</div>
-</div>
-</div>
+<ul>
+<li>It can be helpful to refer to issues and pull requests in
+conversations elsewhere in a repository</li>
+<li>Every issue and PR has a unique number (based on the order in which
+they were created)</li>
+<li>These numbers can be used, preceded by <code>#</code>, to reference
+a given issue or PR.</li>
+<li>Additionally, PRs (and commit messages) that include particular
+phrases will trigger the automatic closure of an issue:
+<ul>
+<li>“closes”</li>
+<li>“fixes”</li>
+<li>“resolves”</li>
+</ul>
+</li>
+</ul>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -574,23 +519,19 @@ exist to help with merging and resolving conflicts.</p>
 </h3>
 <div class="callout-content">
 <ul>
-<li>You may encounter merge conflicts in large pull requests and those
-that have been open for some time.</li>
-<li>GitHub provides an interface to resolve simple conflicts in the
-GitHub web interface.</li>
+<li>Issues and pull requests can be referred to by their number within a
+repository.</li>
+<li>Pull requests descriptions that include “fixes #XYZ”, “resolves
+#XYZ”, or “closes #XYZ” will all close issue number XYZ when they are
+merged.</li>
 </ul>
 </div>
 </div>
-</div>
-<!-- 
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use. 
- -->
-</section></section><section id="aio-reviewing_pull_requests"><p>Content from <a href="reviewing_pull_requests.html">Reviewing pull-requests</a></p>
+</div></section><section id="aio-reviewing_pull_requests"><p>Content from <a href="reviewing_pull_requests.html">Reviewing pull-requests</a></p>
 <hr>
 <p> Last updated on 2023-04-19 | 
         
-        <a href="https://carpentries.github.io/github-skill-up-maintainers/edit/main/episodes/reviewing_pull_requests.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/carpentries/github-skill-up-maintainers/edit/main/episodes/reviewing_pull_requests.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 30 minutes </p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -726,12 +667,12 @@ review, and when should I use each one?</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</section></section><section id="aio-referencing_pull_requests_issues"><p>Content from <a href="referencing_pull_requests_issues.html">Referencing pull-requests and issues</a></p>
+</section></section><section id="aio-resolving_conflicts"><p>Content from <a href="resolving_conflicts.html">Resolving conflicts</a></p>
 <hr>
 <p> Last updated on 2023-04-19 | 
         
-        <a href="https://carpentries.github.io/github-skill-up-maintainers/edit/main/episodes/referencing_pull_requests_issues.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 10 minutes </p>
+        <a href="https://github.com/carpentries/github-skill-up-maintainers/edit/main/episodes/resolving_conflicts.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 15 minutes </p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -743,9 +684,9 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>How do I reference issues and pull requests?</li>
-<li>How can issues be automatically closed when a pull request is
-merged?</li>
+<li>When might I encounter merge conflicts while maintaining/developing
+a lesson?</li>
+<li>How can I resolve simple conflicts in the GitHub web interface?</li>
 </ul>
 </div>
 </div>
@@ -757,31 +698,86 @@ merged?</li>
 <p>After following this section, participants will be ready to practice
 the following skills:</p>
 <ul>
-<li>reference issues and pull requests by their number</li>
-<li>implement keywords to trigger automatic closue of issues when fixed
-by a pull request</li>
+<li>resolve merge conflicts using the GitHub web interface</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<ul>
-<li>It can be helpful to refer to issues and pull requests in
-conversations elsewhere in a repository</li>
-<li>Every issue and PR has a unique number (based on the order in which
-they were created)</li>
-<li>These numbers can be used, preceded by <code>#</code>, to reference
-a given issue or PR.</li>
-<li>Additionally, PRs (and commit messages) that include particular
-phrases will trigger the automatic closure of an issue:
-<ul>
-<li>“closes”</li>
-<li>“fixes”</li>
-<li>“resolves”</li>
-</ul>
-</li>
-</ul>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Note
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>Use the example repository to show an example of a pull request that
+is blocked by a simple conflict, then demonstrate how you can resolve
+this using the web interface.</p>
+</div>
+</div>
+</div>
+</div>
+<section id="what-is-a-merge-conflict"><h2 class="section-heading">What is a merge conflict?<a class="anchor" aria-label="anchor" href="#what-is-a-merge-conflict"></a>
+</h2>
+<hr class="half-width">
+<p>A merge conflict occurs when Git is not able to automatically
+integrate (<em>merge</em>) the changes in a branch with the version of
+the relevant file(s) into another branch (usually the default or main
+branch) of the project.</p>
+<p>Conflicts are seen when the target branch (usually <code>main</code>)
+has changed since the branch for the pull request was created. Often,
+Git is able to combine the two sets of changes without any trouble. But
+sometimes it gets stuck, and requires a human to intervene and decide
+how multiple changes should be combined, which change should take
+precedence, etc.</p>
+<p>When these conflicts arise within a file, Git marks up the file
+contents to highlight them. The conflicts looks something like this:</p>
+<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; pr-branch
+this is one version of the line. it exists in the version of this file in the pr-branch branch.
+=======
+this is another version of the same line. it exists in the version of this file in the main branch.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; main</code></pre>
+</section><section id="resolving-a-merge-conflict"><h2 class="section-heading">Resolving a Merge Conflict<a class="anchor" aria-label="anchor" href="#resolving-a-merge-conflict"></a>
+</h2>
+<hr class="half-width">
+<p>Before the PR can be merged, someone (usually the contributor who
+opened the pull request, or one of the repository Maintainers) needs to
+resolve each of these conflicts by:</p>
+<ol style="list-style-type: decimal">
+<li>Figuring out which version (or combination of versions) of the lines
+should be kept in the file.</li>
+<li>Removing all other lines (including the <code>&lt;</code>,
+<code>=</code>, and <code>&gt;</code> symbols) to leave only that
+resolved version.</li>
+</ol>
+<p>After that has been done, and no conflicts remain to be resolved, the
+branch can be updated, bringing it back in line with the changes in the
+target branch.</p>
+<p>GitHub provides an interface to help you do this, with buttons for
+quick navigation between multiple conflicts, highlighting of the
+conflicting parts of the file, etc.</p>
+<div id="larger-conflicts" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="larger-conflicts" class="callout-inner">
+<h3 class="callout-title">Larger Conflicts<a class="anchor" aria-label="anchor" href="#larger-conflicts"></a>
+</h3>
+<div class="callout-content">
+<p>Sometimes the conflicts between branches will be too large or too
+complex to be resolved within the GitHub web interface. In these cases,
+the conflicts will need to be resolved on the command line.</p>
+<p>GitHub provides <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line" class="external-link">a
+guide to resolving conflicts on the command line</a>, and other tools
+exist to help with merging and resolving conflicts.</p>
+</div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -791,15 +787,19 @@ phrases will trigger the automatic closure of an issue:
 </h3>
 <div class="callout-content">
 <ul>
-<li>Issues and pull requests can be referred to by their number within a
-repository.</li>
-<li>Pull requests descriptions that include “fixes #XYZ”, “resolves
-#XYZ”, or “closes #XYZ” will all close issue number XYZ when they are
-merged.</li>
+<li>You may encounter merge conflicts in large pull requests and those
+that have been open for some time.</li>
+<li>GitHub provides an interface to resolve simple conflicts in the
+GitHub web interface.</li>
 </ul>
 </div>
 </div>
-</div></section>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</section></section>
 </div>
     </main>
 </div>
@@ -812,21 +812,21 @@ merged.</li>
 				<p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
         
-        <a href="https://carpentries.github.io/github-skill-up-maintainers/edit/main/README.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/carpentries/github-skill-up-maintainers/edit/main/README.md" class="external-link">Edit on GitHub</a>
         
 	
-        | <a href="https://carpentries.github.io/github-skill-up-maintainers/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
-        | <a href="https://carpentries.github.io/github-skill-up-maintainers/" class="external-link">Source</a></p>
-				<p><a href="https://carpentries.github.io/github-skill-up-maintainers/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        | <a href="https://github.com/carpentries/github-skill-up-maintainers/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
+        | <a href="https://github.com/carpentries/github-skill-up-maintainers/" class="external-link">Source</a></p>
+				<p><a href="https://github.com/carpentries/github-skill-up-maintainers/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.2" class="external-link">sandpaper (0.12.2)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.17" class="external-link">varnish (0.2.17)</a>.</p>
 			</div>
 		</footer>
 </div> <!-- / div.container -->
@@ -839,17 +839,17 @@ merged.</li>
     {
   "@context": "https://schema.org",
   "@type": "TrainingMaterial",
-  "@id": "https://github-skill-up-maintainers.github.io/NA/instructor/aio.html",
+  "@id": "https://carpentries.github.io/github-skill-up-maintainers/instructor/aio.html",
   "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "software, data, lesson, The Carpentries, maintainers, GitHub, skill-up, issues, merge, pull-requests, labelling, rebase, branch, conflict, referencing",
   "name": "All in One View",
   "creativeWorkStatus": "active",
-  "url": "https://github-skill-up-maintainers.github.io/NA/instructor/aio.html",
-  "identifier": "https://github-skill-up-maintainers.github.io/NA/instructor/aio.html",
-  "dateCreated": "2023-04-19",
-  "dateModified": "2023-05-23",
-  "datePublished": "2023-05-23"
+  "url": "https://carpentries.github.io/github-skill-up-maintainers/instructor/aio.html",
+  "identifier": "https://carpentries.github.io/github-skill-up-maintainers/instructor/aio.html",
+  "dateCreated": "2023-05-30",
+  "dateModified": "2023-05-30",
+  "datePublished": "2023-05-30"
 }
 
   </script><script>
