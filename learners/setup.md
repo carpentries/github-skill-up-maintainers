@@ -26,7 +26,7 @@ systems (and potentially add more, e.g. online setup) in the solutions blocks.
 
 ### Windows
 
-Use PuTTY
+Use Git for Windows (Git-Bash)
 
 :::::::::::::::::::::::::
 
