@@ -49,3 +49,8 @@ docs/
 # translation temp files
 po/*~
 
+# skill-up setup files
+files/github_usernames.txt
+files/*
+!files/generate_example_repositories.py
+!files/supporting-files*

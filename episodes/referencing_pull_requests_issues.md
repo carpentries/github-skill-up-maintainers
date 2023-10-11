@@ -4,7 +4,7 @@ teaching: 10
 exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
 - How do I reference issues and pull requests?
 - How can issues be automatically closed when a pull request is merged?
@@ -28,8 +28,18 @@ After following this section, participants will be ready to practice the followi
   - "fixes"
   - "resolves"
 
+::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
-:::::::::::::::::::::::::::::::::::::: keypoints 
+### Example Issues/PRs
+
+If you are using example repositories [generated with the accompanying script](instructors/instructor-notes.md),
+Issues 1 & 2 should have pull requests associated with them already,
+which you can use to highlight this.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+:::::::::::::::::::::::::::::::::::::: keypoints
 
 - Issues and pull requests can be referred to by their number within a repository.
 - Pull requests descriptions that include "fixes #XYZ", "resolves #XYZ", or "closes #XYZ" will all close issue number XYZ when they are merged.

@@ -14,14 +14,14 @@ carpentry: 'incubator'
 title: 'Skill-up: GitHub for Maintainers and Lesson Developers'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: ~
+created: 2023-03-08
 
 # Comma-separated list of keywords for the lesson
 keywords: 'software, data, lesson, The Carpentries, maintainers, GitHub, skill-up, issues, merge, pull-requests, labelling, rebase, branch, conflict, referencing'
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'pre-alpha'
+life_cycle: 'beta'
 
 # License of the lesson
 license: 'CC-BY 4.0'
@@ -33,7 +33,7 @@ source: 'https://carpentries.github.io/github-skill-up-maintainers/'
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org'
+contact: 'tobyhodges@carpentries.org'
 
 # Navigation ------------------------------------------------
 #
@@ -60,15 +60,16 @@ contact: 'team@carpentries.org'
 # Order of episodes in your lesson
 episodes: 
 - managing_issues.md
-- resolving_conflicts.md
-- reviewing_pull_requests.md
 - referencing_pull_requests_issues.md
+- reviewing_pull_requests.md
+- resolving_conflicts.md
 
 # Information for Learners
 learners: 
 
 # Information for Instructors
-instructors: 
+instructors:
+- example_repo_setup.md
 
 # Learner Profiles
 profiles: 
