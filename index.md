@@ -13,6 +13,9 @@ We recommend that skill-up leaders use [the Instructor View](./instructor/index.
 The skill-up is aimed at people with a basic familiarity with the GitHub interface,
 and the process of editing files and 
 committing changes to a repository via the GitHub web interface.
+It will be particularly relevant to people maintaining/developing
+a lesson using The Carpentries lesson infrastructure
+([the Workbench](https://carpentries.github.io/workbench/).
 
 ## Objectives
 
