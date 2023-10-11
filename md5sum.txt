@@ -9,5 +9,5 @@
 "episodes/reviewing_pull_requests.md" "dfeea736ca2315928cf3c59933bd47f2" "site/built/reviewing_pull_requests.md" "2023-10-11"
 "episodes/resolving_conflicts.md" "e8b6037d6157a0d3518bb498ae79a034" "site/built/resolving_conflicts.md" "2023-10-11"
 "instructors/example_repo_setup.md" "0c3116bd742f1d285a16e6a35a9f8159" "site/built/example_repo_setup.md" "2023-10-11"
-"learners/setup.md" "f81f62ee0b5d70f52b205ab65a5d0bbf" "site/built/setup.md" "2022-04-22"
+"learners/setup.md" "c8ac1835e7e8c430a04b470ad1dd369e" "site/built/setup.md" "2023-10-11"
 "profiles/learner-profiles.md" "60b93493cf1da06dfd63255d73854461" "site/built/learner-profiles.md" "2022-04-22"
