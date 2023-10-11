@@ -27,7 +27,7 @@ life_cycle: 'beta'
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://carpentries.github.io/github-skill-up-maintainers/'
+source: 'https://github.com/carpentries/github-skill-up-maintainers/'
 
 # Default branch of your lesson
 branch: 'main'
@@ -43,9 +43,6 @@ contact: 'tobyhodges@carpentries.org'
 #
 # Example -------------
 #
-#episodes:
-#- introduction.md
-
 #
 # learners:
 # - setup.md
@@ -58,7 +55,7 @@ contact: 'tobyhodges@carpentries.org'
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes: 
+episodes:
 - managing_issues.md
 - referencing_pull_requests_issues.md
 - reviewing_pull_requests.md
