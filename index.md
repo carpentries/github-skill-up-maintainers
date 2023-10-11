@@ -6,7 +6,7 @@ This is a GitHub skill-up for Carpentries Maintainers and lesson developers.
 It is designed primarily as a resource for skill-up leaders,
 but may also be useful for self-directed learning.
 
-We recommend that skill-up leaders use [the Instructor View] when using the site.
+We recommend that skill-up leaders use [the Instructor View](./instructor/index.html) when using the site.
 
 ## Target Audience
 

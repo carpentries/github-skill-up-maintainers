@@ -4,7 +4,7 @@ teaching: 30
 exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
 - What features does GitHub provide to facilitate reviewing pull requests?
 - What are the different options for the outcome of a pull request review, and when should I use each one?
@@ -22,7 +22,7 @@ After following this section, participants will be ready to practice the followi
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 - reviewing PRs is one of the most important tasks for a Maintainer
-- the way you review a pull request, and communicate with the person who opened it, 
+- the way you review a pull request, and communicate with the person who opened it,
   can have an enormous impact on their motivation to contribute again
 - GitHub provides several features that can improve your experience as a reviewer,
   and make it easier for contributors to follow up on your review
@@ -48,6 +48,33 @@ After following this section, participants will be ready to practice the followi
   - "Approve" - approve the PR for merging. Some people use this when suggesting only very minor or optional changes - if you want to do this, make sure you are explicit about what changes you are suggesting etc before the PR can be merged
   - "Request changes" - indicates that changes would be required to the PR before you would be willing to merge it.
 
+::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+### Reviewing Example Pull Requests
+
+Use the example repository to show an example of reviewing a pull request,
+demonstrating:
+
+* line-specific comments
+* suggesting a change
+* approving/requesting changes at the end of the review
+
+If you are using example repositories [generated with the accompanying script](instructors/instructor-notes.md),
+I recommend using the "Add detail to the project README" pull request
+to demonstrate line-by-line commenting and suggesting changes:
+you can suggest that the contributor uses a different email address, for example.
+
+The purpose of the other two pull requests is to:
+
+1. Repeat the reviewing workflow two more times,
+   giving you a chance to emphasise the important steps
+   and encourage good communications practices.
+2. Create a merge conflict that can be resolved in the GitHub web browser interface
+   (see the Instructor Note for the next episode).
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 ::: callout
 
 ## Saved Replies
@@ -58,7 +85,7 @@ After following this section, participants will be ready to practice the followi
 
 :::
 
-:::::::::::::::::::::::::::::::::::::: keypoints 
+:::::::::::::::::::::::::::::::::::::: keypoints
 
 - What features does GitHub provide to facilitate reviewing pull requests?
 - What are the different options for the outcome of a pull request review, and when should I use each one?

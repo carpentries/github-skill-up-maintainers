@@ -4,7 +4,7 @@ teaching: 15
 exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
 - When might I encounter merge conflicts while maintaining/developing a lesson?
 - How can I resolve simple conflicts in the GitHub web interface?
@@ -19,13 +19,26 @@ After following this section, participants will be ready to practice the followi
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-::: instructor
+
+::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+### Example Conflicts
 
 Use the example repository to show an example of a pull request that is
-blocked by a simple conflict, 
+blocked by a simple conflict,
 then demonstrate how you can resolve this using the web interface.
 
-:::
+If you are using example repositories [generated with the accompanying script](instructors/instructor-notes.md),
+a simple conflict can be introduced by merging one of the two pull requests
+suggesting changes to `recipe_instructions.Rmd`.
+These two pull requests ("Fix typos in recipe instructions" and "Fix oven temperature conversion")
+make edits to the same line in the file.
+
+To resolve the conflict, keep the changes made by both pull requests
+(i.e. the typo fix and the temperature conversion).
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 ## What is a merge conflict?
 
@@ -34,12 +47,12 @@ the changes in a branch with the version of the relevant file(s) into another br
 (usually the default or main branch) of the project.
 
 Conflicts are seen when the target branch (usually `main`)
-has changed since the branch for the pull request was created. 
-Often, Git is able to combine the two sets of changes without any trouble. 
-But sometimes it gets stuck, and requires a human to intervene and 
+has changed since the branch for the pull request was created.
+Often, Git is able to combine the two sets of changes without any trouble.
+But sometimes it gets stuck, and requires a human to intervene and
 decide how multiple changes should be combined, which change should take precedence, etc.
 
-When these conflicts arise within a file, 
+When these conflicts arise within a file,
 Git marks up the file contents to highlight them.
 The conflicts looks something like this:
 
@@ -80,7 +93,21 @@ and other tools exist to help with merging and resolving conflicts.
 
 :::
 
-:::::::::::::::::::::::::::::::::::::: keypoints 
+::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+### Still Have Time Left?
+
+If you still have time remaining in the skill-up session,
+consider using it to:
+
+1. Demonstrate the VS Code Web IDE interface to a repository,
+   accessed by hitting <kbd>.</kbd> while browsing the contents of the repository.
+2. Talk about [debugging strategies when GitHub Actions fail](https://carpentries.github.io/lesson-development-training/infrastructure.html#headingSpoiler1) on a repository/pull request.
+3. Open up a discussion about how Maintainers could coordinate their efforts on a lesson.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::: keypoints
 
 - You may encounter merge conflicts in large pull requests and those that have been open for some time.
 - GitHub provides an interface to resolve simple conflicts in the GitHub web interface.
