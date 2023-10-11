@@ -66,6 +66,7 @@ learners:
 
 # Information for Instructors
 instructors:
+- instructor-notes.md
 - example_repo_setup.md
 
 # Learner Profiles
