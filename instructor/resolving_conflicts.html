@@ -18,12 +18,12 @@
   <div class="container-fluid top-nav-container">
     <div class="col-md-6">
       <div class="large-logo">
-        <img alt="Carpentries Incubator" src="../assets/images/incubator-logo.svg"><abbr class="icon" title="This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught." style="text-decoration: unset">
+        <img alt="Carpentries Incubator" src="../assets/images/incubator-logo.svg"><abbr class="icon" title="This lesson is in the beta phase, which means that it is ready for teaching by instructors outside of the original author team." style="text-decoration: unset">
            
-          <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha" class="external-link alert-link" style="color: #383838">Pre-Alpha
-            <i aria-hidden="true" class="icon" data-feather="alert-octagon" style="color: #FF4955; border-radius: 5px"></i>
+          <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#polishing-beta-stage" class="external-link alert-link" style="color: #383838">Beta
+            <i aria-hidden="true" class="icon" data-feather="alert-circle" style="color: #001483; border-radius: 5px"></i>
           </a>
-          <span class="visually-hidden">This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught.</span>
+          <span class="visually-hidden">This lesson is in the beta phase, which means that it is ready for teaching by instructors outside of the original author team.</span>
         </abbr>
         
       </div>
@@ -73,7 +73,8 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"></ul></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="example_repo_setup.html">Setting Up Example Repositories</a></li>
+          </ul></li>
       </ul></div>
     <form class="d-flex col-md-2 search-form">
       <fieldset disabled><input class="form-control me-2 searchbox" type="search" placeholder="Search" aria-label="Search"><button class="btn btn-outline-success tablet-search-button" type="submit">
@@ -213,7 +214,7 @@
                       <li>
                         <a href="../instructor/images.html">Extract All Images</a>
                       </li>
-                      
+                      <li><a href="example_repo_setup.html">Setting Up Example Repositories</a></li>
                     </ul></div>
                 </div>
               </div>
@@ -249,7 +250,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Resolving conflicts</h1>
-        <p> Last updated on 2023-04-19 | 
+        <p> Last updated on 2023-10-11 | 
         
         <a href="https://github.com/carpentries/github-skill-up-maintainers/edit/main/episodes/resolving_conflicts.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -293,14 +294,22 @@ the following skills:</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">
   <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
-  Instructor Note
+  Example Conflicts
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Use the example repository to show an example of a pull request that
 is blocked by a simple conflict, then demonstrate how you can resolve
 this using the web interface.</p>
+<p>If you are using example repositories <a href="instructor-notes.html">generated with the accompanying script</a>,
+a simple conflict can be introduced by merging one of the two pull
+requests suggesting changes to <code>recipe_instructions.Rmd</code>.
+These two pull requests (“Fix typos in recipe instructions” and “Fix
+oven temperature conversion”) make edits to the same line in the
+file.</p>
+<p>To resolve the conflict, keep the changes made by both pull requests
+(i.e. the typo fix and the temperature conversion).</p>
 </div>
 </div>
 </div>
@@ -357,6 +366,30 @@ exist to help with merging and resolving conflicts.</p>
 </div>
 </div>
 </div>
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Still Have Time Left?
+  </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div class="accordion-body">
+<p>If you still have time remaining in the skill-up session, consider
+using it to:</p>
+<ol style="list-style-type: decimal"><li>Demonstrate the VS Code Web IDE interface to a repository, accessed
+by hitting <kbd>.</kbd> while browsing the contents of the
+repository.</li>
+<li>Talk about <a href="https://carpentries.github.io/lesson-development-training/infrastructure.html#headingSpoiler1" class="external-link">debugging
+strategies when GitHub Actions fail</a> on a repository/pull
+request.</li>
+<li>Open up a discussion about how Maintainers could coordinate their
+efforts on a lesson.</li>
+</ol></div>
+</div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -405,7 +438,7 @@ any links that you are not going to use.
 	
         | <a href="https://github.com/carpentries/github-skill-up-maintainers/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
         | <a href="https://github.com/carpentries/github-skill-up-maintainers/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/carpentries/github-skill-up-maintainers/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+				<p><a href="https://github.com/carpentries/github-skill-up-maintainers/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:tobyhodges@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         
@@ -434,9 +467,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/github-skill-up-maintainers/instructor/resolving_conflicts.html",
   "identifier": "https://carpentries.github.io/github-skill-up-maintainers/instructor/resolving_conflicts.html",
-  "dateCreated": "2023-05-30",
-  "dateModified": "2023-04-19",
-  "datePublished": "2023-10-10"
+  "dateCreated": "2023-03-08",
+  "dateModified": "2023-10-11",
+  "datePublished": "2023-10-11"
 }
 
   </script><script>

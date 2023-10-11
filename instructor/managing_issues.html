@@ -18,12 +18,12 @@
   <div class="container-fluid top-nav-container">
     <div class="col-md-6">
       <div class="large-logo">
-        <img alt="Carpentries Incubator" src="../assets/images/incubator-logo.svg"><abbr class="icon" title="This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught." style="text-decoration: unset">
+        <img alt="Carpentries Incubator" src="../assets/images/incubator-logo.svg"><abbr class="icon" title="This lesson is in the beta phase, which means that it is ready for teaching by instructors outside of the original author team." style="text-decoration: unset">
            
-          <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha" class="external-link alert-link" style="color: #383838">Pre-Alpha
-            <i aria-hidden="true" class="icon" data-feather="alert-octagon" style="color: #FF4955; border-radius: 5px"></i>
+          <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#polishing-beta-stage" class="external-link alert-link" style="color: #383838">Beta
+            <i aria-hidden="true" class="icon" data-feather="alert-circle" style="color: #001483; border-radius: 5px"></i>
           </a>
-          <span class="visually-hidden">This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught.</span>
+          <span class="visually-hidden">This lesson is in the beta phase, which means that it is ready for teaching by instructors outside of the original author team.</span>
         </abbr>
         
       </div>
@@ -73,7 +73,8 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"></ul></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="example_repo_setup.html">Setting Up Example Repositories</a></li>
+          </ul></li>
       </ul></div>
     <form class="d-flex col-md-2 search-form">
       <fieldset disabled><input class="form-control me-2 searchbox" type="search" placeholder="Search" aria-label="Search"><button class="btn btn-outline-success tablet-search-button" type="submit">
@@ -214,7 +215,7 @@
                       <li>
                         <a href="../instructor/images.html">Extract All Images</a>
                       </li>
-                      
+                      <li><a href="example_repo_setup.html">Setting Up Example Repositories</a></li>
                     </ul></div>
                 </div>
               </div>
@@ -250,7 +251,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Managing issues</h1>
-        <p> Last updated on 2023-04-19 | 
+        <p> Last updated on 2023-10-11 | 
         
         <a href="https://github.com/carpentries/github-skill-up-maintainers/edit/main/episodes/managing_issues.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -341,14 +342,26 @@ those, and labels can be added/updated as you triage the issue list.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">
   <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
-  Instructor Note
+  Example Issues
   </h3>
 </button>
 <div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Use your example repository to demonstrate how to label issues, and
 to discuss the appropriate use of some important labels here.</p>
-</div>
+<p>If you are using example repositories <a href="instructor-notes.html">generated with the accompanying script</a>,
+I recommend the following labels:</p>
+<ul><li>Issue 1 (“Typos in recipe instructions”):
+<code>type:typo text</code>, <code>good first issue</code>,
+<code>help wanted</code>
+</li>
+<li>Issue 2 (“Cinnamon rolls burnt 🔥”): <code>type:bug</code>,
+<code>good first issue</code>, <code>help wanted</code>
+</li>
+<li>Issue 3 (“Alternative to sourdough cinnamon rolls”):
+<code>status:refer to cac</code>, <code>type:discussion</code>
+</li>
+</ul></div>
 </div>
 </div>
 </div>
@@ -452,7 +465,7 @@ any links that you are not going to use.
 	
         | <a href="https://github.com/carpentries/github-skill-up-maintainers/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
         | <a href="https://github.com/carpentries/github-skill-up-maintainers/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/carpentries/github-skill-up-maintainers/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+				<p><a href="https://github.com/carpentries/github-skill-up-maintainers/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:tobyhodges@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         
@@ -481,9 +494,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/github-skill-up-maintainers/instructor/managing_issues.html",
   "identifier": "https://carpentries.github.io/github-skill-up-maintainers/instructor/managing_issues.html",
-  "dateCreated": "2023-05-30",
-  "dateModified": "2023-04-19",
-  "datePublished": "2023-10-10"
+  "dateCreated": "2023-03-08",
+  "dateModified": "2023-10-11",
+  "datePublished": "2023-10-11"
 }
 
   </script><script>
