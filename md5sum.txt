@@ -10,5 +10,5 @@
 "episodes/resolving_conflicts.md" "e8b6037d6157a0d3518bb498ae79a034" "site/built/resolving_conflicts.md" "2023-10-11"
 "instructors/instructor-notes.md" "90cffbebc094ad60236f5a8b2b325b9d" "site/built/instructor-notes.md" "2023-10-20"
 "instructors/example_repo_setup.md" "0c3116bd742f1d285a16e6a35a9f8159" "site/built/example_repo_setup.md" "2023-10-11"
-"learners/setup.md" "ac3e3a87e8e65b1995da8f01383f01f1" "site/built/setup.md" "2023-10-11"
+"learners/setup.md" "dc8d6369e01d7b3b0ebc4e1a4eb7291d" "site/built/setup.md" "2023-10-20"
 "profiles/learner-profiles.md" "60b93493cf1da06dfd63255d73854461" "site/built/learner-profiles.md" "2022-04-22"
